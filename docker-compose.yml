@@ -11,8 +11,6 @@ services:
       - 5900:5900
   flask:
     build: ./flask
-    volumes:
-      - ./flask/app:/app
     ports:
       - "8001:80"
     environment:
